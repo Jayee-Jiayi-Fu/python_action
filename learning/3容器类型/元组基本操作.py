@@ -54,7 +54,7 @@ print(rect2)
 # 5.2 typing.NameTuple 和类型注解语法定义具名元组类型
 # 可读性更佳
 # 注意：虽然给width和height加了类型注解，但Python在执行时并不会做真正的类型校验
-class Rectangle(NameTuple):
+class Rectangle(namedtuple):
     width: int
     height: int
 
