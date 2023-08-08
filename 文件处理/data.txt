@@ -1,0 +1,4 @@
+This is a file
+This is second line
+你好
+This is last line.
