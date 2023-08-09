@@ -4,23 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b61b4fdb-0d63-4942-aed8-1a8d79f5b247" name="Changes" comment="《Python工匠》的读书笔记">
-      <change afterPath="$PROJECT_DIR$/learning/3容器类型/案例：分析网站访问日志/analyzer_v1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning/3容器类型/案例：分析网站访问日志/analyzer_v2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning/3容器类型/案例：分析网站访问日志/analyzer_v3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning/3容器类型/案例：分析网站访问日志/generater.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning/3容器类型/案例：分析网站访问日志/logs.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/文件处理/复制图片/复制图片.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/文件处理/案例：素数分组存放/pritm_group.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/文件处理/读取文本文件.py" afterDir="false" />
+    <list default="true" id="b61b4fdb-0d63-4942-aed8-1a8d79f5b247" name="Changes" comment="第三章案例实现">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning/3容器类型/案例.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning/dict_set.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning/3容器类型/案例：分析网站访问日志/analyzer_v3.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning/3容器类型/案例：分析网站访问日志/analyzer_v3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -205,7 +201,8 @@
       <updated>1689857198404</updated>
       <workItem from="1691372852714" duration="281000" />
       <workItem from="1691373140487" duration="8470000" />
-      <workItem from="1691408431026" duration="14183000" />
+      <workItem from="1691408431026" duration="14367000" />
+      <workItem from="1691552091117" duration="3627000" />
     </task>
     <task id="LOCAL-00001" summary="《Python工匠》的读书笔记">
       <created>1691333626287</created>
@@ -214,7 +211,28 @@
       <option name="project" value="LOCAL" />
       <updated>1691333626287</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="第三章案例实现">
+      <created>1691492658549</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1691492658549</updated>
+    </task>
+    <task id="LOCAL-00003" summary="第三章案例实现">
+      <created>1691492670244</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1691492670244</updated>
+    </task>
+    <task id="LOCAL-00004" summary="第三章案例实现">
+      <created>1691492686578</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1691492686578</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,10 +251,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="《Python工匠》的读书笔记" />
-    <option name="LAST_COMMIT_MESSAGE" value="《Python工匠》的读书笔记" />
+    <MESSAGE value="第三章案例实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="第三章案例实现" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/python_action$analyzer_v3.coverage" NAME="analyzer_v3 覆盖结果" MODIFIED="1691492405076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning/3容器类型/案例：分析网站访问日志" />
+    <SUITE FILE_PATH="coverage/python_action$analyzer_v3.coverage" NAME="analyzer_v3 覆盖结果" MODIFIED="1691556175435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning/3容器类型/案例：分析网站访问日志" />
     <SUITE FILE_PATH="coverage/python_action$.coverage" NAME="读取文件 覆盖结果" MODIFIED="1691395411174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/文件处理" />
     <SUITE FILE_PATH="coverage/python_action$analyzer_v1.coverage" NAME="analyzer_v1 覆盖结果" MODIFIED="1691412391926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning/3容器类型/案例：分析网站访问日志" />
     <SUITE FILE_PATH="coverage/python_action$analyzer_v2.coverage" NAME="analyzer_v2 覆盖结果" MODIFIED="1691456005887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning/3容器类型/案例：分析网站访问日志" />

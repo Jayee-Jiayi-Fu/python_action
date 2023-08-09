@@ -43,6 +43,11 @@ class PerfLevelDict(MutableMapping):
         '''返回请求总数'''
         return sum(self.values())
 
+    def items(self):
+        '''按照PagePerfLevel的循序返回性能等级数据'''
+        return sorted(self.data.items(),
+                      key = lambda pair: list(PagePerfLevel).index(pair[0]))
+
     @staticmethod
     def compute_level(time_cost_str):
 
@@ -69,5 +74,11 @@ def analyzer_v3():
             path, time_cost_str = line.strip().split()
             path_groups[path][time_cost_str] += 1
 
+    for path,result in path_groups.items():
+        print(f' == Path: {path}')
+        print(f'    Total request: {result.total_request()}')
+        print(f'    Performance:')
+        for level_name, count in result.items():
+            print(f'    - {level_name}: {count}')
 
 analyzer_v3()
