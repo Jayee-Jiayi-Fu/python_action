@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b61b4fdb-0d63-4942-aed8-1a8d79f5b247" name="Changes" comment="第三章案例实现">
+    <list default="true" id="b61b4fdb-0d63-4942-aed8-1a8d79f5b247" name="Changes" comment="第三章案例，日志分析完成">
+      <change afterPath="$PROJECT_DIR$/learning/3容器类型/编程建议/使用有序字典去重.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learning/3容器类型/编程建议/使用集合判断成员是否存在.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learning/3容器类型/编程建议/列表的性能陷阱.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learning/3容器类型/编程建议/快速合并两个字典.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learning/3容器类型/编程建议/推导式编写建议.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learning/3容器类型/编程建议/生成器_按需返回替代容器.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learning/3容器类型/编程建议/用生成器替代列表.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trans_to_timestamp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/临时工具箱" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning/3容器类型/案例：分析网站访问日志/analyzer_v3.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning/3容器类型/案例：分析网站访问日志/analyzer_v3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning/3容器类型/元组基本操作.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning/3容器类型/元组基本操作.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning/3容器类型/列表常用操作.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning/3容器类型/列表常用操作.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +35,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2SpxCrOVQacVYdTu91bl9Th69ii" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -50,8 +63,30 @@
       <recent name="$PROJECT_DIR$/learning" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.analyzer_v3">
-    <configuration name="集合基本操作" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.列表常用操作">
+    <configuration name="列表的性能陷阱" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learning/3容器类型/编程建议" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learning/3容器类型/编程建议/列表的性能陷阱.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="列表常用操作" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -64,7 +99,51 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learning/3容器类型/集合基本操作.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learning/3容器类型/列表常用操作.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="快速合并两个字典" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learning/3容器类型/编程建议" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learning/3容器类型/编程建议/快速合并两个字典.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="使用有序字典去重" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learning/3容器类型/编程建议" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learning/3容器类型/编程建议/使用有序字典去重.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -116,7 +195,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="analyzer_v1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="生成器_按需返回替代容器" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -124,12 +203,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learning/3容器类型/案例：分析网站访问日志" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learning/3容器类型/编程建议" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learning/3容器类型/案例：分析网站访问日志/analyzer_v1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learning/3容器类型/编程建议/生成器_按需返回替代容器.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -138,7 +217,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="analyzer_v2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="trans_to_timestamp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -146,34 +225,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learning/3容器类型/案例：分析网站访问日志" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learning/3容器类型/案例：分析网站访问日志/analyzer_v2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="analyzer_v3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learning/3容器类型/案例：分析网站访问日志" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learning/3容器类型/案例：分析网站访问日志/analyzer_v3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trans_to_timestamp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -184,10 +241,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.analyzer_v3" />
-        <item itemvalue="Python.analyzer_v2" />
-        <item itemvalue="Python.analyzer_v1" />
-        <item itemvalue="Python.集合基本操作" />
+        <item itemvalue="Python.列表常用操作" />
+        <item itemvalue="Python.trans_to_timestamp" />
+        <item itemvalue="Python.列表的性能陷阱" />
+        <item itemvalue="Python.生成器_按需返回替代容器" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +259,10 @@
       <workItem from="1691372852714" duration="281000" />
       <workItem from="1691373140487" duration="8470000" />
       <workItem from="1691408431026" duration="14367000" />
-      <workItem from="1691552091117" duration="3627000" />
+      <workItem from="1691552091117" duration="11142000" />
+      <workItem from="1691651273865" duration="1024000" />
+      <workItem from="1691715020372" duration="8417000" />
+      <workItem from="1691924350308" duration="1529000" />
     </task>
     <task id="LOCAL-00001" summary="《Python工匠》的读书笔记">
       <created>1691333626287</created>
@@ -232,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691492686578</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="第三章案例，日志分析完成">
+      <created>1691563112593</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1691563112593</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,11 +319,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="《Python工匠》的读书笔记" />
     <MESSAGE value="第三章案例实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="第三章案例实现" />
+    <MESSAGE value="第三章案例，日志分析完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="第三章案例，日志分析完成" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/python_action$analyzer_v3.coverage" NAME="analyzer_v3 覆盖结果" MODIFIED="1691556175435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning/3容器类型/案例：分析网站访问日志" />
-    <SUITE FILE_PATH="coverage/python_action$.coverage" NAME="读取文件 覆盖结果" MODIFIED="1691395411174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/文件处理" />
+    <SUITE FILE_PATH="coverage/python_action$trans_to_timestamp.coverage" NAME="trans_to_timestamp 覆盖结果" MODIFIED="1691734577866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_action$_.coverage" NAME="生成器_按需返回替代容器 覆盖结果" MODIFIED="1691565669155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning/3容器类型/编程建议" />
+    <SUITE FILE_PATH="coverage/python_action$.coverage" NAME="列表常用操作 覆盖结果" MODIFIED="1691924770809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning/3容器类型" />
+    <SUITE FILE_PATH="coverage/python_action$zidm.coverage" NAME="快速合并两个字典 覆盖结果" MODIFIED="1691743939348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning/3容器类型/编程建议" />
     <SUITE FILE_PATH="coverage/python_action$analyzer_v1.coverage" NAME="analyzer_v1 覆盖结果" MODIFIED="1691412391926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning/3容器类型/案例：分析网站访问日志" />
     <SUITE FILE_PATH="coverage/python_action$analyzer_v2.coverage" NAME="analyzer_v2 覆盖结果" MODIFIED="1691456005887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning/3容器类型/案例：分析网站访问日志" />
   </component>

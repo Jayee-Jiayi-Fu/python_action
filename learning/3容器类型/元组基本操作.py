@@ -1,4 +1,3 @@
-from collections import namedtuple
 
 # 元组是一种有序的不可变容器类型
 
@@ -42,6 +41,8 @@ user_info = ('piglei', 'MALE', 30, True)
 # 和普通元组一样，具名元组是不可变的
 
 # 5.1 namedtuple()函数定义
+from collections import namedtuple
+
 # 下面三种方式等价
 Rectangle1 = namedtuple('Rectangle', 'width,height')
 Rectangle2 = namedtuple('Rectangle', 'width height')
@@ -60,3 +61,27 @@ class Rectangle(namedtuple):
 
 rect = Rectangle(100,200)
 
+
+# 6. 让函数返回NamedTuple
+# 对于这种未来可能会变动的多返回值函数来说，建议使用NamedTuple类型对返回结果进行建模，避免返回值变更报错和修正
+from typing import NamedTuple
+
+class Address(NamedTuple):
+    '''地址信息表'''
+    country:str
+    province:str
+    city:str
+# 在Address里增加了新的返回值district，已有的函数调用代码也不用进行任何适配性修改
+# 因为函数结果只是多了一个新属性，没有任何破坏性影响
+def latlon_to_address(lat,lob):
+    counter = '1'
+    province = '2'
+    city = '3'
+    return Address(
+        country=counter,
+        province = province,
+        city = city
+    )
+lat = 233
+lon = 322
+addr = latlon_to_address(lat,lon)
