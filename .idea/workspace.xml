@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b61b4fdb-0d63-4942-aed8-1a8d79f5b247" name="Changes" comment="第4章-分支基本用法">
-      <change afterPath="$PROJECT_DIR$/learning/条件分支控制流/案例：电影评分/bisect优化范围分支.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning/条件分支控制流/案例：电影评分/movie_ranker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning/条件分支控制流/案例：电影评分/movie_ranker_v2.py" afterDir="false" />
+    <list default="true" id="b61b4fdb-0d63-4942-aed8-1a8d79f5b247" name="Changes" comment="第4章-分支基本用法-案例">
+      <change afterPath="$PROJECT_DIR$/learning/条件分支控制流/编程建议/减少重复代码.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learning/条件分支控制流/编程建议/编程建议.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning/if_else_cycle.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning/list_tuple.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning/str.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning/条件分支控制流/分支管用写法.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning/条件分支控制流/分支惯用写法.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -333,7 +328,7 @@
       <workItem from="1691651273865" duration="1024000" />
       <workItem from="1691715020372" duration="8417000" />
       <workItem from="1691924350308" duration="14420000" />
-      <workItem from="1692062243230" duration="2983000" />
+      <workItem from="1692062243230" duration="6915000" />
     </task>
     <task id="LOCAL-00001" summary="《Python工匠》的读书笔记">
       <created>1691333626287</created>
@@ -384,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691930548109</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="第4章-分支基本用法-案例">
+      <created>1692065818637</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1692065818637</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,18 +409,8 @@
     <MESSAGE value="第三章案例，日志分析完成" />
     <MESSAGE value="第3章-编程建议" />
     <MESSAGE value="第4章-分支基本用法" />
-    <option name="LAST_COMMIT_MESSAGE" value="第4章-分支基本用法" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/learning/条件分支控制流/案例：电影评分/movie_ranker_v2.py</url>
-          <line>64</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="第4章-分支基本用法-案例" />
+    <option name="LAST_COMMIT_MESSAGE" value="第4章-分支基本用法-案例" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/python_action$analyzer_v3.coverage" NAME="analyzer_v3 覆盖结果" MODIFIED="1691556175435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning/3容器类型/案例：分析网站访问日志" />
