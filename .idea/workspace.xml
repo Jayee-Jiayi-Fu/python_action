@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b61b4fdb-0d63-4942-aed8-1a8d79f5b247" name="Changes" comment="第4章-分支基本用法-案例">
-      <change afterPath="$PROJECT_DIR$/learning/条件分支控制流/编程建议/减少重复代码.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning/条件分支控制流/编程建议/编程建议.py" afterDir="false" />
+    <list default="true" id="b61b4fdb-0d63-4942-aed8-1a8d79f5b247" name="Changes" comment="第4章-分支基本用法-编程建议">
+      <change afterPath="$PROJECT_DIR$/learning/5异常和错误处理/try语句常用知识.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learning/5异常和错误处理/使用上下文管理器with.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learning/5异常和错误处理/抛出异常而不是返回错误.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning/异常.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning/5异常和错误处理/优先使用异常捕获.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning/条件分支控制流/修改对象的布尔值.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning/4条件分支控制流/修改对象的布尔值.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning/条件分支控制流/分支惯用写法.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning/4条件分支控制流/分支惯用写法.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning/条件分支控制流/案例：电影评分/bisect优化范围分支.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning/4条件分支控制流/案例：电影评分/bisect优化范围分支.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning/条件分支控制流/案例：电影评分/movie_ranker.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning/4条件分支控制流/案例：电影评分/movie_ranker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning/条件分支控制流/案例：电影评分/movie_ranker_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning/4条件分支控制流/案例：电影评分/movie_ranker_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning/条件分支控制流/等值判断==和is.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning/4条件分支控制流/等值判断==和is.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning/条件分支控制流/编程建议/减少重复代码.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning/4条件分支控制流/编程建议/减少重复代码.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning/条件分支控制流/编程建议/编程建议.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning/4条件分支控制流/编程建议/编程建议.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,36 +64,14 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/learning/5异常和错误处理" />
       <recent name="$PROJECT_DIR$/文件处理/读写JSON文件" />
       <recent name="$PROJECT_DIR$/文件处理/案例：复制图片" />
       <recent name="$PROJECT_DIR$/文件处理/案例：素数分组存放" />
       <recent name="$PROJECT_DIR$/租房" />
-      <recent name="$PROJECT_DIR$/learning" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.movie_ranker_v2">
-    <configuration name="分支惯用写法" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learning/条件分支控制流" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learning/条件分支控制流/分支惯用写法.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.使用上下文管理器with">
     <configuration name="列表常用操作" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -303,13 +291,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="使用上下文管理器with" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learning/5异常和错误处理" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learning/5异常和错误处理/使用上下文管理器with.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.使用上下文管理器with" />
         <item itemvalue="Python.movie_ranker_v2" />
         <item itemvalue="Python.bisect优化范围分支" />
         <item itemvalue="Python.movie_ranker" />
         <item itemvalue="Python.等值判断==和is" />
-        <item itemvalue="Python.分支惯用写法" />
       </list>
     </recent_temporary>
   </component>
@@ -328,7 +338,8 @@
       <workItem from="1691651273865" duration="1024000" />
       <workItem from="1691715020372" duration="8417000" />
       <workItem from="1691924350308" duration="14420000" />
-      <workItem from="1692062243230" duration="6915000" />
+      <workItem from="1692062243230" duration="12610000" />
+      <workItem from="1692147190147" duration="3995000" />
     </task>
     <task id="LOCAL-00001" summary="《Python工匠》的读书笔记">
       <created>1691333626287</created>
@@ -386,7 +397,21 @@
       <option name="project" value="LOCAL" />
       <updated>1692065818637</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="第4章-分支基本用法-编程建议">
+      <created>1692072016026</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1692072016026</updated>
+    </task>
+    <task id="LOCAL-00010" summary="第4章-分支基本用法-编程建议">
+      <created>1692072029015</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1692072029015</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,20 +435,22 @@
     <MESSAGE value="第3章-编程建议" />
     <MESSAGE value="第4章-分支基本用法" />
     <MESSAGE value="第4章-分支基本用法-案例" />
-    <option name="LAST_COMMIT_MESSAGE" value="第4章-分支基本用法-案例" />
+    <MESSAGE value="第4章-分支基本用法-编程建议" />
+    <option name="LAST_COMMIT_MESSAGE" value="第4章-分支基本用法-编程建议" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/python_action$analyzer_v3.coverage" NAME="analyzer_v3 覆盖结果" MODIFIED="1691556175435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning/3容器类型/案例：分析网站访问日志" />
     <SUITE FILE_PATH="coverage/python_action$bisect.coverage" NAME="bisect优化范围分支 覆盖结果" MODIFIED="1692064012445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning/条件分支控制流/案例：电影评分" />
     <SUITE FILE_PATH="coverage/python_action$trans_to_timestamp.coverage" NAME="trans_to_timestamp 覆盖结果" MODIFIED="1691734577866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_action$_.coverage" NAME="生成器_按需返回替代容器 覆盖结果" MODIFIED="1691565669155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning/3容器类型/编程建议" />
     <SUITE FILE_PATH="coverage/python_action$movie_ranker_v2.coverage" NAME="movie_ranker_v2 覆盖结果" MODIFIED="1692065737876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning/条件分支控制流/案例：电影评分" />
-    <SUITE FILE_PATH="coverage/python_action$.coverage" NAME="修改对象的布尔值 覆盖结果" MODIFIED="1691929119441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning/条件分支控制流" />
-    <SUITE FILE_PATH="coverage/python_action$zidm.coverage" NAME="快速合并两个字典 覆盖结果" MODIFIED="1691743939348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning/3容器类型/编程建议" />
     <SUITE FILE_PATH="coverage/python_action$1.coverage" NAME="movie_ranker 覆盖结果" MODIFIED="1692008620686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning/条件分支控制流/案例：电影评分" />
-    <SUITE FILE_PATH="coverage/python_action$analyzer_v1.coverage" NAME="analyzer_v1 覆盖结果" MODIFIED="1691412391926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning/3容器类型/案例：分析网站访问日志" />
     <SUITE FILE_PATH="coverage/python_action$analyzer_v2.coverage" NAME="analyzer_v2 覆盖结果" MODIFIED="1691456005887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning/3容器类型/案例：分析网站访问日志" />
     <SUITE FILE_PATH="coverage/python_action$movie_ranker.coverage" NAME="movie_ranker 覆盖结果" MODIFIED="1692062701191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning/条件分支控制流/案例：电影评分" />
+    <SUITE FILE_PATH="coverage/python_action$analyzer_v3.coverage" NAME="analyzer_v3 覆盖结果" MODIFIED="1691556175435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning/3容器类型/案例：分析网站访问日志" />
+    <SUITE FILE_PATH="coverage/python_action$with.coverage" NAME="使用上下文管理器with 覆盖结果" MODIFIED="1692088883265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning/5异常和错误处理" />
+    <SUITE FILE_PATH="coverage/python_action$.coverage" NAME="修改对象的布尔值 覆盖结果" MODIFIED="1691929119441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning/条件分支控制流" />
+    <SUITE FILE_PATH="coverage/python_action$zidm.coverage" NAME="快速合并两个字典 覆盖结果" MODIFIED="1691743939348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning/3容器类型/编程建议" />
+    <SUITE FILE_PATH="coverage/python_action$analyzer_v1.coverage" NAME="analyzer_v1 覆盖结果" MODIFIED="1691412391926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning/3容器类型/案例：分析网站访问日志" />
     <SUITE FILE_PATH="coverage/python_action$__is.coverage" NAME="等值判断==和is 覆盖结果" MODIFIED="1691930378605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning/条件分支控制流" />
   </component>
 </project>
