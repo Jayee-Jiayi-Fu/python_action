@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b61b4fdb-0d63-4942-aed8-1a8d79f5b247" name="Changes" comment="第5章-异常与错误处理-案例1，精确捕获异常">
-      <change afterPath="$PROJECT_DIR$/learning/10数据模型与描述符/基础.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning/6循环与可迭代对象/基础.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning/7函数/关键字参数.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning/7函数/参数默认值.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning/7函数/定义函数.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning/8装饰器/基础.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning/9面向对象编程/基础.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning/fun.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning/higher.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning/8装饰器/higher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning/iterable.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning/6循环与可迭代对象/iterable.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trans_to_timestamp.py" beforeDir="false" afterPath="$PROJECT_DIR$/trans_to_timestamp.py" afterDir="false" />
-    </list>
+    <list default="true" id="b61b4fdb-0d63-4942-aed8-1a8d79f5b247" name="Changes" comment="第7章-函数1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -329,7 +316,7 @@
       <workItem from="1693531078391" duration="1009000" />
       <workItem from="1693987810871" duration="226000" />
       <workItem from="1694049231309" duration="4493000" />
-      <workItem from="1694090689354" duration="58000" />
+      <workItem from="1694090689354" duration="71000" />
     </task>
     <task id="LOCAL-00001" summary="《Python工匠》的读书笔记">
       <created>1691333626287</created>
@@ -415,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692268312073</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="第7章-函数1">
+      <created>1694090750615</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1694090750615</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -442,7 +436,8 @@
     <MESSAGE value="第4章-分支基本用法-编程建议" />
     <MESSAGE value="第5章-异常与错误处理-基础" />
     <MESSAGE value="第5章-异常与错误处理-案例1，精确捕获异常" />
-    <option name="LAST_COMMIT_MESSAGE" value="第5章-异常与错误处理-案例1，精确捕获异常" />
+    <MESSAGE value="第7章-函数1" />
+    <option name="LAST_COMMIT_MESSAGE" value="第7章-函数1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/python_action$bisect.coverage" NAME="bisect优化范围分支 覆盖结果" MODIFIED="1692064012445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning/条件分支控制流/案例：电影评分" />
