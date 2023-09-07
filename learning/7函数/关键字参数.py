@@ -29,11 +29,21 @@ def query_users2(limit, offset, *, min_followers_count, include_profile):
     '''
     pass
 
-# 使用位置参数调用（报错）
+# 使用位置参数调用
 try:
     query_users2(20, 0, 100, True)
 except TypeError as e:
     print(f'未使用未知参数调用报错： {e}')
 
-# 使用关键字参数(更易读）
+# 使用关键字参数
 query_users2(20, 0, min_followers_count=100, include_profile=True)
+
+
+
+# 对称方法：仅限位置参数'/'
+def query_users2(limit, offset, /, min_followers_count, include_profile):
+    '''查询用户
+    :param min_followers_count: 最小关注者数量
+    :param include_profile: 结果包含用户详细档案
+    '''
+    pass
