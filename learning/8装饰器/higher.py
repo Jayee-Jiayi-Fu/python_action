@@ -18,6 +18,8 @@ def count():
             return i * i
         fs.append(f)
     return fs
+
+
 f1,f2,f3 = count()
 # print(f1(),f2(),f3())
 

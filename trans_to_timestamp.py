@@ -1,5 +1,5 @@
 import time
-date = "2023-08-12 09:53:05"
+date = "2023-08-14 16:58:32"
 
 # strptime() 函数根据指定的格式把一个时间字符串解析为时间元组。
 date_array = time.strptime(date, "%Y-%m-%d %H:%M:%S")
