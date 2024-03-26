@@ -5,7 +5,7 @@ import bisect
 
 # 明确的有序分界点
 # 注意：用来做二分查找的容器必须是已经排好序的
-breakpoints = (6,7,8,8.5)
+breakpoints = (6, 7, 8, 8.5)
 
 # bisect 函数会返回值在列表中的位置
 print(f'bisect.bisect(breakpoints, 1) : {bisect.bisect(breakpoints, 1)}')

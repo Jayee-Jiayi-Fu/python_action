@@ -1,14 +1,17 @@
 # 1. 双等号运算符==，它会对比两个值是否一致
-x, y, z = 1,1,3
+x, y, z = 1, 1, 3
 print(f'x==y : {x ==y}, x == z : {x == z}')
 
 
 # 2. 类的 == 结果可操控，修改 __eq__方法
 class EqualWithAnything():
     '''与任何对象相等'''
+
     def __eq__(self, other):
         '''other 是 == 右边的对象'''
         return True
+
+
 foo = EqualWithAnything()
 print(f'foo == False: {foo == False}')
 print(f'foo == None: {foo == None}')
@@ -40,13 +43,13 @@ y = 'abcdefg'
 print(f'x = {x}, id(x): {id(x)}, y = {y}, id(y): {id(y)}')
 print(f'x is y: {x is y}')
 
-x = (1,2,3)
-y = (1,2,3)
+x = (1, 2, 3)
+y = (1, 2, 3)
 print(f'x = {x}, id(x): {id(x)}, y = {y}, id(y): {id(y)}')
 print(f'x is y: {x is y}')
 
 
-x = [1,2,3]
-y = [1,2,3]
+x = [1, 2, 3]
+y = [1, 2, 3]
 print(f'x = {x}, id(x): {id(x)}, y = {y}, id(y): {id(y)}')
 print(f'x is y: {x is y}')

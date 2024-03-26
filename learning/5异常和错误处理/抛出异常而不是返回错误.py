@@ -8,15 +8,17 @@ class CreateItemError(Exception):
 
 # · 新函数拥有更稳定的返回值类型，它永远只会返回Item类型或是抛出异常。
 # · 虽然我们鼓励使用异常，但异常总是会不可避免地让人“感到惊讶”，所以，最好在函数文档里说明可能抛出的异常类型。
+
+
 def create_item(name):
     '''创建一个新的item
     ：raises：当无法创建时抛出 CreateItemError
     '''
     if len(name) > MAX_LENGTH_OF NAME:
-         raise CreateItemError('name of item is too long')
+        raise CreateItemError('name of item is too long')
     if len(get_current_items()) > MAX_ITEMS_QUOTA:
-         raise CreateItemError('items is full')
-    return Item(name = name)
+        raise CreateItemError('items is full')
+    return Item(name=name)
 
 
 # · 不同于返回值，异常在被捕获前会不断往调用栈上层汇报。
@@ -31,5 +33,3 @@ def create_from_input():
         print(f'create item is failed: {e}')
     else:
         print(f'item<{name}> created')
-
-

@@ -4,6 +4,8 @@
 # 1. 定义元组
 # 1.1 使用字面量语法
 # 真相：“括号”不是定义元组的关键标志，“逗号”才是
+from typing import NamedTuple
+from collections import namedtuple
 t1 = (0, 1, 2)
 t2 = 0, 1, 2
 print(t1, t2, t1 == t2)
@@ -14,18 +16,22 @@ print(t3)
 
 # 2. 返回多个结果，其实就是返回元组
 # 将函数返回值一次赋值给多个变量时，其实就是对元组做了一次解包操作
+
+
 def get_rectangle():
     width = 100
     height = 20
     return width, height
+
+
 result = get_rectangle()
-w,h = get_rectangle()
+w, h = get_rectangle()
 print(result, type(result), w, h)
 
 
 # 3. 没有“元组推导式”
 # 括号得到的是一个生成器对象，但是属于可迭代对象，可以调佣tuple函数获得元组
-results = (n* 100 for n in range(10) if n % 2 ==0)
+results = (n * 100 for n in range(10) if n % 2 == 0)
 t4 = tuple(results)
 print(results, type(results), t4, type(t4))
 
@@ -41,13 +47,12 @@ user_info = ('piglei', 'MALE', 30, True)
 # 和普通元组一样，具名元组是不可变的
 
 # 5.1 namedtuple()函数定义
-from collections import namedtuple
 
 # 下面三种方式等价
 Rectangle1 = namedtuple('Rectangle', 'width,height')
 Rectangle2 = namedtuple('Rectangle', 'width height')
-Rectangle3 = namedtuple('Rectangle', ['width','height'])
-rect1 = Rectangle1(100,20)
+Rectangle3 = namedtuple('Rectangle', ['width', 'height'])
+rect1 = Rectangle1(100, 20)
 rect2 = Rectangle2(width=200, height=30)
 print(rect1, rect1[0], rect1.width)
 print(rect2)
@@ -55,33 +60,40 @@ print(rect2)
 # 5.2 typing.NameTuple 和类型注解语法定义具名元组类型
 # 可读性更佳
 # 注意：虽然给width和height加了类型注解，但Python在执行时并不会做真正的类型校验
+
+
 class Rectangle(namedtuple):
     width: int
     height: int
 
-rect = Rectangle(100,200)
+
+rect = Rectangle(100, 200)
 
 
 # 6. 让函数返回NamedTuple
 # 对于这种未来可能会变动的多返回值函数来说，建议使用NamedTuple类型对返回结果进行建模，避免返回值变更报错和修正
-from typing import NamedTuple
+
 
 class Address(NamedTuple):
     '''地址信息表'''
-    country:str
-    province:str
-    city:str
+    country: str
+    province: str
+    city: str
 # 在Address里增加了新的返回值district，已有的函数调用代码也不用进行任何适配性修改
 # 因为函数结果只是多了一个新属性，没有任何破坏性影响
-def latlon_to_address(lat,lob):
+
+
+def latlon_to_address(lat, lob):
     counter = '1'
     province = '2'
     city = '3'
     return Address(
         country=counter,
-        province = province,
-        city = city
+        province=province,
+        city=city
     )
+
+
 lat = 233
 lon = 322
-addr = latlon_to_address(lat,lon)
+addr = latlon_to_address(lat, lon)

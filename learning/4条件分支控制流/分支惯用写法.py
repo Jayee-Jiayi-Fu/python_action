@@ -19,7 +19,6 @@ print(f'bool([]): {bool([])}, bool([1,2,3]): {bool([1,2,3])}')
 # · 布尔值为真：非0的数值、True，非空的序列、元组、字典，用户定义的类和实例，等等。
 
 
-
 # 3， 把否定逻辑移入表达式内
 # 用not关键字来表达“否定”含义
 '''不要这样写：
@@ -52,4 +51,3 @@ language = 'Python' if you.favor('dynamic') else 'golang'
 '''
 
 # 5.
-

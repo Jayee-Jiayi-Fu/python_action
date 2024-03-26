@@ -61,11 +61,14 @@ print(f'Outside [after]: orig_obj="{orig_obj}"')
 
 # 5. 不要在遍历列表是时修改
 # 要修改列表，请不要在遍历时直接修改。只需选择启用一个新列表来保存修改后的成员
+
+
 def remove_even(numbers):
     for n in numbers:
         if n % 2 == 0:
             numbers.remove(n)
     return numbers
 
-numbers = [1,2,4,8,11]
+
+numbers = [1, 2, 4, 8, 11]
 print(f'remove_even(numbers): {remove_even(numbers)}')

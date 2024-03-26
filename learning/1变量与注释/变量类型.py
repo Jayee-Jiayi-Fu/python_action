@@ -1,6 +1,8 @@
 from typing import List
 
 # 1.  函数文档
+
+
 def remove_invalid(items):
     ''' 剔除 items 里的无效元素
     :param items: 待剔除对象

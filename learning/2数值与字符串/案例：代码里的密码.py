@@ -41,8 +41,3 @@ def refactor_add_daily_points(user):
     user.point += DAILY_POINTS
 
     return
-
-
-
-
-

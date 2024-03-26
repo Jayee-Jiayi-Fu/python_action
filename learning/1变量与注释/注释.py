@@ -12,6 +12,7 @@ class Person:
     :param age: 年龄
     :param favorite_color: 最喜欢的颜色
     '''
+
     def __init__(self, name, age, favorite_color):
         self.name = name
         self.age = age
@@ -30,6 +31,3 @@ class Person:
 # 不应过多阐述函数细节
 # 接口文档主要是让函数（或类）的使用者不用逐行阅读函数代码，也能很快通过文档知道该如何使用这个函数，以及在使用时有什么注意事项。
 # 应该站在函数设计者的角度，着重描述函数的功能、参数说明等
-
-
-

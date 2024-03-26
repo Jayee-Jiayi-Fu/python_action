@@ -16,6 +16,7 @@ class PagePerfLevel(str, Enum):
     LT_1000 = 'between_300_and_1s'
     GT_1000 = 'greater_than_1s'
 
+
 class PerfLevelDict(MutableMapping):
     '''存储响应时间性能等级的字典'''
 
@@ -46,7 +47,7 @@ class PerfLevelDict(MutableMapping):
     def items(self):
         '''按照PagePerfLevel的循序返回性能等级数据'''
         return sorted(self.data.items(),
-                      key = lambda pair: list(PagePerfLevel).index(pair[0]))
+                      key=lambda pair: list(PagePerfLevel).index(pair[0]))
 
     @staticmethod
     def compute_level(time_cost_str):
@@ -74,11 +75,12 @@ def analyzer_v3():
             path, time_cost_str = line.strip().split()
             path_groups[path][time_cost_str] += 1
 
-    for path,result in path_groups.items():
+    for path, result in path_groups.items():
         print(f' == Path: {path}')
         print(f'    Total request: {result.total_request()}')
         print(f'    Performance:')
         for level_name, count in result.items():
             print(f'    - {level_name}: {count}')
+
 
 analyzer_v3()

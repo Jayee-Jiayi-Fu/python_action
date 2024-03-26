@@ -3,14 +3,14 @@
 # 一个try可对应多个except
 # finally 语句中的代码无论如何都会执行，哪怕已经执行了return
 def safe_int(value):
-     try:
-         return int(value)
-     except TypeError:
-         print(f'type error: { type(value) } is invalid')
-     except ValueError:
-         print(f'value eror: {value} is invalid')
-     finally:
-         print('function completd')
+    try:
+        return int(value)
+    except TypeError:
+        print(f'type error: { type(value) } is invalid')
+    except ValueError:
+        print(f'value eror: {value} is invalid')
+    finally:
+        print('function completd')
 
 
 # 2. 把更精确的except语句放在前面
@@ -26,12 +26,10 @@ def incr_by_key(d, key):
         print('KeyError 已经在')
 
 
-
 # 2. 使用else分支
 # 在用try捕获异常时，有时程序需要仅在一切正常时做某件事。为了做到这一点，我们常常需要在代码里设置一个专用的标记变量。
 # 异常捕获语句里的else表示：仅当try语句块里没抛出任何异常时，才执行else分支下的内容，效果就像在try最后增加一个标记变量一样。
 # 和finally语句不同，假如程序在执行try代码块时碰到了return或break等跳转语句，中断了本次异常捕获，那么即便代码没抛出任何异常，else分支内的逻辑也不会被执行
-
 # 之前一般做法
 '''
 sync_succeeded = False

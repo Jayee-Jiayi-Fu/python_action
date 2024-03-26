@@ -12,7 +12,7 @@ print(f'nums_copy: {nums_copy}')
 
 # 1.2 持推导式的类型，用推导式也可以产生一个浅拷贝对象
 d = {'foo': 1}
-d2 = {key : value for key, value in d.items()}
+d2 = {key: value for key, value in d.items()}
 d['foo'] = 2
 print(f'd: {d}')
 print(f'd2: {d2}')
@@ -41,5 +41,3 @@ print(f'items: {items} \nitems_copy:{ items_copy}')
 items_deep = copy.deepcopy(items)
 items_deep[1].append('Joke')
 print(f'items: {items} \nitems_deep:{ items_deep}')
-
-

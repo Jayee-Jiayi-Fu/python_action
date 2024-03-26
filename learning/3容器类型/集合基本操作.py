@@ -12,7 +12,7 @@ print(type({}))
 
 
 # 2. 推导式语法
-nums = [1,2,2,4,1]
+nums = [1, 2, 2, 4, 1]
 print({n for n in nums if n < 3})
 
 
@@ -33,7 +33,7 @@ except Exception as e:
 
 # 5. 集合运算：交集、并集、差集
 # 所有操作都可以用两种方式来进行：方法和运算符
-fruits_1 = {'apple','orange','pineapple'}
+fruits_1 = {'apple', 'orange', 'pineapple'}
 fruits_2 = {'tomato', 'orange', 'grapes', 'mango'}
 print(f'交集：{fruits_1 & fruits_2}')
 print(f'并集：{fruits_1 | fruits_2}')
@@ -43,7 +43,7 @@ print(f'差集（前一个集合有、后一个集合没有的东西）：{fruit
 # 6. 集合只能存放可哈希对象
 valid_seet = {'apple', 20, ('foo')}
 try:
-    invalid_set = {'foo', [1,2,3]}
+    invalid_set = {'foo', [1, 2, 3]}
 except Exception as e:
     print(f'无效集合：{e}')
 
@@ -56,28 +56,29 @@ except Exception as e:
 # 对于不可变容器类型(tuple, frozenset)，仅当它的所有成员都不可变时，它自身才是可哈希的；
 print(hash('string'))
 print(hash(100))
-print(hash((1,2,3)))
+print(hash((1, 2, 3)))
 
 # 由用户定义的所有对象默认都是可哈希的
+
+
 class Foo:
     pass
+
+
 print(f'用户定义对象：{hash(Foo())}')
 
 # 可变的内置类型都无法正常计算哈希值
 # 比如str、int、tuple、frozenset等
 # 有一定的“传染性”。比如在一个原本可哈希的元组里放入可变的列表对象后，它也会马上变得不可哈希
 try:
-    hash({'key':'value'})
+    hash({'key': 'value'})
 except TypeError as e:
     print(f'不可哈希：{e}')
 try:
-    hash([1,2,3])
+    hash([1, 2, 3])
 except TypeError as e:
     print(f'不可哈希：{e}')
 try:
-    hash((1,2,3,['foo']))
+    hash((1, 2, 3, ['foo']))
 except TypeError as e:
     print(f'不可哈希：{e}')
-
-
-

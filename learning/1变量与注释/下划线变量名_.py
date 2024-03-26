@@ -10,4 +10,3 @@ usernames, *_, score = data
 # 2. 在Python交互式命令行里，默认保存我们输入的上个表达式的返回值
 'foo'.upper()
 print(_)
-

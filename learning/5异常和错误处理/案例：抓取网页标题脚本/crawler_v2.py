@@ -36,7 +36,7 @@ def save_website_title(url, filename):
 
     # 保存文件
     try:
-        with open(filename,'w') as fp:
+        with open(filename, 'w') as fp:
             fp.write(title)
     except IOError as e:
         print(f'save failed: unable to write to file {filename}: {e}')
@@ -49,5 +49,5 @@ def main():
     save_website_title('https://www.qq.com', 'qq_title.txt')
 
 
-if __name__ =='__main__':
+if __name__ == '__main__':
     main()

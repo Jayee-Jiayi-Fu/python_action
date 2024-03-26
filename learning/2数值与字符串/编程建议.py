@@ -83,7 +83,9 @@ def str_join():
     return ''.join(l)
 
 
-cat_spent = timeit.timeit(setup='from __main__ import str_cat', stmt='str_cat()')
+cat_spent = timeit.timeit(
+    setup='from __main__ import str_cat', stmt='str_cat()')
 print('cat_spent:', cat_spent)
-str_join = timeit.timeit(setup='from __main__ import str_join', stmt='str_join()')
+str_join = timeit.timeit(
+    setup='from __main__ import str_join', stmt='str_join()')
 print('join_spent:', str_join)

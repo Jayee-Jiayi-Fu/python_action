@@ -44,7 +44,7 @@ print(movie.get('price', '55'))
 d = {'title': 'foobar'}
 d.setdefault('items', []).append('foo')
 print('d>> ', d)
-d.setdefault('items',[]).append('bar')
+d.setdefault('items', []).append('bar')
 print('d>> ', d)
 
 
@@ -57,13 +57,13 @@ except KeyError:
     pass
 # 想去掉某个键，并不关心它存在与否、删除有没有成功,使用dict.pop(key,default)方法就够了
 # 严格说来，pop方法的主要用途并不是删除某个键，而是取出这个键对应的值。但偶尔用它来执行删除操作也无伤大雅。
-d.pop('title',None)
+d.pop('title', None)
 print('del>> ', d)
 
 
 # 6. 字典推导式
-d1 = {'foo':3, 'bar':4}
-d2 = {key:value * 10 for key, value in d1.items() if key == 'foo'}
+d1 = {'foo': 3, 'bar': 4}
+d2 = {key: value * 10 for key, value in d1.items() if key == 'foo'}
 print(d2)
 
 
@@ -75,10 +75,10 @@ print(d2)
 # 7.1 collections.OrderedDict
 # 原生字典 key he value 相同，即相等
 # orderedDict，顺序也要相同才相等
-d1 = {'name': 'piglei', 'fruit':'apple'}
-d2 = {'fruit':'apple', 'name':'piglei'}
+d1 = {'name': 'piglei', 'fruit': 'apple'}
+d2 = {'fruit': 'apple', 'name': 'piglei'}
 print('d1==d2:', d1 == d2)
 
-d1 = OrderedDict(name= 'piglei', fruit='apple')
+d1 = OrderedDict(name='piglei', fruit='apple')
 d2 = OrderedDict(fruit='apple', name='piglei')
 print('d1==d2:', d1 == d2)
