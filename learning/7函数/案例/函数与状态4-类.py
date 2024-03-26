@@ -8,6 +8,9 @@
 但无论是函数还是实例方法，它们都是“可调用对象”的一种，都可以作为re.sub()函数的repl参数使用。
 '''
 
+
+
+
 import re
 class CyclicMosaic:
     _chars = ['*', 'x']
@@ -21,13 +24,13 @@ class CyclicMosaic:
         self._char_index = (self._char_index + 1) % len(self._chars)
         return length * char
 
+
 def mosaic_string(s):
     return re.sub(r'\d+', CyclicMosaic().generate, s)
 
+
 print(mosaic_string('商店共1002000个苹果，小明以2221元每斤的价格买走了122个'))
 print(mosaic_string('商店共1002000个苹果，小明以2221元每斤的价格买走了122个'))
-
-
 
 
 '''三种实现有状态函数的方式，这三种方式各有优缺点，总结如下：
@@ -42,4 +45,3 @@ print(mosaic_string('商店共1002000个苹果，小明以2221元每斤的价格
 · 当变量较多、行为较复杂时，类代码比闭包代码更易读，也更容易维护。
 
 在日常编码中，如果你需要实现有状态的函数，应该尽量避免使用全局变量，闭包或类才是更好的选择。'''
-

@@ -18,6 +18,10 @@ print(c(),c(),c())
 '''
 
 '''使用闭包的有状态替换函数'''
+
+
+
+
 import re
 def make_cyclic_mosic():
     char_index = 0
@@ -35,11 +39,10 @@ def make_cyclic_mosic():
 
     return _make_cyclic_mosic
 
+
 def mosaic_string(s):
     return re.sub(r'\d+', make_cyclic_mosic(), s)
 
+
 print(mosaic_string('商店共1000个苹果，小明以12元每斤的价格买走了8个'))
 print(mosaic_string('商店共1000个苹果，小明以12元每斤的价格买走了8个'))
-
-
-

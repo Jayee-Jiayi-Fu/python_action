@@ -13,16 +13,20 @@
     没有匹配成功的，re.search()返回None。
 '''
 
-import re
 
+
+
+import re
 def mosaic_matchobj(matchobj):
     '''将匹配到的模式替换为等长型号字符串'''
     length = len(matchobj.group())
     return '*'*length
 
+
 def mosaic_string(s):
     '''用等长的 * 替代输入字符串里所有的连续数字'''
     return re.sub(r'\d+', mosaic_matchobj, s)
+
 
 s = mosaic_string('商店共1000个苹果，小明以12元每斤的价格买走了8个')
 print(s)

@@ -21,8 +21,8 @@ import re
 '''
 _mosaic_char_index = 0
 
-def mosaic_global_var(matchobj):
 
+def mosaic_global_var(matchobj):
     '''用global关键字声明一个全局变量'''
     global _mosaic_char_index
 
@@ -37,9 +37,11 @@ def mosaic_global_var(matchobj):
     length = len(matchobj.group())
     return char * length
 
+
 def mosaic_string(s):
     '''用等长的 * 替代输入字符串里所有的连续数字'''
     return re.sub(r'\d+', mosaic_matchobj, s)
+
 
 s = mosaic_string('商店共1000个苹果，小明以12元每斤的价格买走了8个')
 print(s)

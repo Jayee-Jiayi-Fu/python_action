@@ -13,10 +13,13 @@ re.sub(pattern, repl, string, count, flags)是正则表达式模块所提供的�
 （5）flags：正则匹配标志，比如re.IGNORECASE代表不区分大小写。
 '''
 
-import re
 
+
+
+import re
 def mosaic_string(s):
     return re.sub(r'\d+', '*', s)
+
 
 s = mosaic_string('商店共100个苹果，小明以12元每斤的价格买走了8个')
 print(s)
