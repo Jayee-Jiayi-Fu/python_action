@@ -18,9 +18,32 @@ query_users1(20, 0, 100, True)
 query_users1(min_followers_count=100, include_profile=True, limit=20, offset=0)
 
 
+# 例子2
+def calc(*numbers):
+    sum = 0
+    for x in numbers:
+        sum = sum + x * x
+    return sum
+
+
+print(calc(1, 2, 3, 4, 5))
+print(calc())
+
+
+# 例子3
+def person(name, age, **kw):
+    print('name=', name, 'age=', age, 'other:', kw)
+
+
+person('Jayee', 28, city='ShenZhen', Country='China')
+info = {'city': 'GuangZhou', 'counter': 'China'}
+person('Shally', 23, **info)
+
+
 # 4. 强制使用关键字参数
 # 通过在参数列表中插入*符号，该符号后的所有参数都变成了“仅限关键字参数
 # 如果调用方仍然想用位置参数来提供这些参数值，程序就会抛出错误
+
 def query_users2(limit, offset, *, min_followers_count, include_profile):
     '''查询用户
     :param min_followers_count: 最小关注者数量

@@ -1,3 +1,5 @@
+import re
+
 '''
 要求1. 有一段文字，里面包含各类数字，比如数量、价格等，编写一段代码把文字里的所有数字都用星号替代，实现脱敏的效果。
 要求2. 进一步修改函数，保留每个被替换数字的原始长度，比如100应该被替换成***
@@ -14,13 +16,10 @@
 '''
 
 
-
-
-import re
 def mosaic_matchobj(matchobj):
     '''将匹配到的模式替换为等长型号字符串'''
     length = len(matchobj.group())
-    return '*'*length
+    return '*' * length
 
 
 def mosaic_string(s):
