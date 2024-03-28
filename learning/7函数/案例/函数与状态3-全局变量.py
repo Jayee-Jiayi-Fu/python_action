@@ -41,9 +41,8 @@ def mosaic_global_var(matchobj):
 
 def mosaic_string(s):
     '''用等长的 * 替代输入字符串里所有的连续数字'''
-    return re.sub(r'\d+', mosaic_global_var, s)
+    return re.sub(r'\d+', mosaic_matchobj, s)
 
 
-s = '商店共1000个苹果，小明以12元每斤的价格买走了8个'
-print('1', mosaic_string(s))  # 商店共****个苹果，小明以xx元每斤的价格买走了*个
-print('2', mosaic_string(s))
+s = mosaic_string('商店共1000个苹果，小明以12元每斤的价格买走了8个')
+print(s)
