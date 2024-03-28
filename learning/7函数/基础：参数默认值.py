@@ -10,7 +10,7 @@ def power(x, n=2):
 print(power(5, 1), power(5), power(5, 3))
 
 
-# 2. 参数陷阱： 别将可变类型作为参数默认值Pπ
+# 2. 参数陷阱： 别将可变类型作为参数默认值
 # 第二次执行时，items的值不再是函数定义的空列表[]，而是变成了第一次执行后的结果['foo']
 # Python函数的参数默认值只会在函数定义阶段被创建一次，之后不论再调用多少次，函数内拿到的默认值都是同一个对象
 print('>>>参数陷阱： 别将可变类型作为参数默认值')
@@ -62,89 +62,3 @@ def dump_value(value, extra=_not_set):
     if extra is _not_set:
         # 调用方没有传递 extra 参数
         pass
-
-
-# 可变参数
-# def calc(numbers):
-#     sum = 0
-#     for x in numbers:
-#         sum = sum + x * x
-#     return sum
-# print(calc([1,2,3,4,5]))
-# print(calc((1,2,3,4,5)))
-
-
-# def calc(*numbers):
-#     sum = 0
-#     for x in numbers:
-#         sum = sum + x * x
-#     return sum
-# print(calc(1,2,3,4,5))
-# print(calc())
-
-
-# 关键字参数
-# def person(name,age,**kw):
-#     print('name=',name,'age=',age,'other:',kw)
-# person('Jayee',28,city = 'ShenZhen',Country='China')
-# info = {'city':'GuangZhou','counter':'China'}
-# person('Shally',23,**info)
-
-
-# 命名关键字参数
-# def person(name,age,*,city,job):
-#     print(name,age,city,job)
-
-# person('Jack',23,city='Beijing',job='Engineer')
-
-# def person2(name,*ages,city):
-#     print(name,city)
-# person2('Jack',city='Shanghai')
-
-
-# 函数参数
-# def power(x,n = 2):
-#     r = 1
-#     while n > 0:
-#         r =  x * r
-#         n = n - 1
-#     return r
-# print(power(5,1),power(5),power(5,3))
-
-
-# 可变参数
-# def calc(numbers):
-#     sum = 0
-#     for x in numbers:
-#         sum = sum + x * x
-#     return sum
-# print(calc([1,2,3,4,5]))
-# print(calc((1,2,3,4,5)))
-
-
-# def calc(*numbers):
-#     sum = 0
-#     for x in numbers:
-#         sum = sum + x * x
-#     return sum
-# print(calc(1,2,3,4,5))
-# print(calc())
-
-
-# 关键字参数
-# def person(name,age,**kw):
-#     print('name=',name,'age=',age,'other:',kw)
-# person('Jayee',28,city = 'ShenZhen',Country='China')
-# info = {'city':'GuangZhou','counter':'China'}
-# person('Shally',23,**info)
-
-
-# 命名关键字参数
-# def person(name,age,*,city,job):
-#     print(name,age,city,job)
-
-# person('Jack',23,city='Beijing',job='Engineer')
-
-# def person2(name,*ages,city):
-#     print(name,city)
-# person2('Jack',city='Shanghai')

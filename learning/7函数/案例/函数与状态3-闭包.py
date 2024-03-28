@@ -1,3 +1,6 @@
+
+import re
+
 '''闭包：
 1. 一种允许函数访问已执行完成的其他函数里的私有变量的技术
 2. 是为函数增加状态的另一种方式
@@ -20,9 +23,6 @@ print(c(),c(),c())
 '''使用闭包的有状态替换函数'''
 
 
-
-
-import re
 def make_cyclic_mosic():
     char_index = 0
     mosaic_chars = ['*', 'x']

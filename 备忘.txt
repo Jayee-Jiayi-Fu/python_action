@@ -1,0 +1,16 @@
+Python 标准库：https://docs.python.org/zh-cn/3.12/library/index.html
+
+
+Sublime快捷键：
+	Command + D 选中一个单词 
+	Command + L 选中一行 
+	Command + A 全选
+	Ctrl + Command + M 选中括号内所有内容
+	Command + Ctrl + G (选中部分文本时) 按此键选中所有相同文本
+	Command + D (选中部分文本时) 直接选中下一次出现的该文本
+
+	在同时打开多个标签页时，可以用以下的热键切换： 
+	Command + T 列出所有的标签页 
+	Command + Shift + ] 下一标签页  
+	Command + Shift + [ 上一标签页 
+	Command + Ctrl + P 切换侧边栏显示的工程  
