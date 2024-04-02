@@ -10,7 +10,8 @@ movies = [
     {'name': 'The Shawshank Redemption ', 'year': 1994, 'rating': '9.3'},
 ]
 
-RANK = ['S','A','B', 'C','D']
+RANK = ['S', 'A', 'B', 'C', 'D']
+
 
 class MovieNametuple(NamedTuple):
     name: str
@@ -35,9 +36,9 @@ class Movie():
         '''
         if self.rating >= 8.5:
             return 'S'
-        elif self.rating >=8:
+        elif self.rating >= 8:
             return 'A'
-        elif self.rating >=7:
+        elif self.rating >= 7:
             return 'B'
         elif self.rating >= 6:
             return 'C'
@@ -45,7 +46,7 @@ class Movie():
             return 'D'
 
 
-def get_sorted_movie(movies: [Movie], sorting_typing:str):
+def get_sorted_movie(movies: [Movie], sorting_typing: str):
     '''对电影列表进行排序并返回
     :param movies: Movie 对象列表
     :param sorting_typing: 排序选项，可选值： name（名称）、year（年份）、rating(评分), random（随机乱序）, rank(等级）
@@ -59,8 +60,7 @@ def get_sorted_movie(movies: [Movie], sorting_typing:str):
         'rank': lambda movie: RANK.index(movie.rank)
     }
 
-    return sorted(movies, key = key_dict[sorting_typing])
-
+    return sorted(movies, key=key_dict[sorting_typing])
 
 
 def main():
@@ -75,13 +75,16 @@ def main():
             break
 
         if sorting_typing not in all_sorting_types:
-            print(f'Sorry, "{sorting_typing}" is not a valid sorting type, please choose from "{ "/".join(all_sorting_types) }"')
+            print(f'Sorry, "{sorting_typing}" \
+                is not a valid sorting type, please choose from \
+                "{ "/".join(all_sorting_types) }"')
             continue
 
         # 排序并输出排好序的电影列表
-        movies_sorted  = get_sorted_movie(movies_obj, sorting_typing)
+        movies_sorted = get_sorted_movie(movies_obj, sorting_typing)
         for movie in movies_sorted:
-            print(f'- [{movie.rank}] {movie.name} ({movie.year}) | rating: {movie.rank}')
+            print(f'- [{movie.rank}] {movie.name} \
+                ({movie.year}) | rating: {movie.rank}')
         print('-------------------------------------')
 
 
