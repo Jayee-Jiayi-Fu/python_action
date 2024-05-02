@@ -50,33 +50,3 @@ for i in obj:
 print(isinstance(obj, Iterable))  # True
 
 
-# 03. 抽象类的子类化机制
-class Validator(ABC):  # ❶要定义一个抽象类，需要继承ABC类或使用abc.ABCMeta元类
-    '''校验器抽象类'''
-    @classmethod
-    def __subclasshook__(cls, C):
-        print(f'实例所属类型会作为参数传入该方法: {C}')
-        '''任何提供了 validate 方法的类，都被当做 Validator 的子类'''
-        # ❷C.__mro__代表C的类派生路线上的所有类
-        if any('validate' in B.__dict__ for B in C.__mro__):
-            return True
-        return NotImplemented
-
-    def validate(self, value):
-        raise NotImplementedError
-
-
-# 上面代码的重点是__subclasshook__类方法。__subclasshook__是抽象类的一个特殊方法，
-# 当你使用isinstance检查对象是否属于某个抽象类时，如果后者定义了这个方法，那么该方法就会被触发，然后：
-# · 实例所属类型会作为参数传入该方法（上面代码中的C参数）；
-# · 如果方法返回了布尔值，该值表示实例类型是否属于抽象类的子类；
-# · 如果方法返回NotImplemented，本次调用会被忽略，继续进行正常的子类判断逻辑。
-
-# 在我编写的Validator类中，__subclasshook__方法的逻辑是：所有实现了validate方法的类都是我的子类。
-# 实例所属类型会作为参数传入该方法
-class StringValidator:
-    def validate(self, value):
-        pass
-
-
-print(isinstance(StringValidator(), Validator))
