@@ -1,4 +1,7 @@
 
+from abc import ABC
+
+
 # 03. 抽象类的子类化机制
 class Validator(ABC):  # ❶要定义一个抽象类，需要继承ABC类或使用abc.ABCMeta元类
     '''校验器抽象类'''
@@ -44,7 +47,6 @@ class Foo:
 
 print('before regist, isinstance(Foo, Validator): ', isinstance(Foo, Validator))
 
-Validator.register(Foo)
 Validator.register(Foo)
 print('after regist, isinstance(Foo(), Validator): ',
       isinstance(Foo(), Validator))
