@@ -1,0 +1,7 @@
+
+SOLID 设计原则：
+· S：single responsibility principle（单一职责原则，SRP）。
+· O：open-closed principle（开放–关闭原则，OCP）。
+· L：Liskov substitution principle（里式替换原则，LSP）。
+· I：interface segregation principle（接口隔离原则，ISP）。
+· D：dependency inversion principle（依赖倒置原则，DIP）。
