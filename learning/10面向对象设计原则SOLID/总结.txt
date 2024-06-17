@@ -5,3 +5,7 @@ SOLID 设计原则：
 · L：Liskov substitution principle（里式替换原则，LSP）。
 · I：interface segregation principle（接口隔离原则，ISP）。
 · D：dependency inversion principle（依赖倒置原则，DIP）。
+
+（1） SRP· 一个类只应该有一种被修改的原因· 编写更小的类通常更不容易违反SRP· SRP同样适用于函数，你可以让函数和类协同工作
+
+（2） OCP· 类应该对修改关闭，对扩展开放· 通过分析需求，找到代码中易变的部分，是让类符合OCP的关键· 使用子类继承的方式可以让类符合OCP· 通过算法类与依赖注入，也可以让类符合OCP· 将数据与逻辑分离，使用数据驱动的方式也是实践OCP的好办法

@@ -1,7 +1,6 @@
 # 案例：一个简单的Hacker News爬虫
 # 从设计的角度看，下面代码违反了SOLID原则中的第一条：SRP，
 # SRP认为：一个类应该仅有一个被修改的理由。换句话说，每个类都应该只承担一种职责。
-import io
 import sys
 from typing import Iterable, TextIO
 
@@ -22,7 +21,7 @@ class Post:
         self.title = title
         self.link = link
         self.points = points
-        self.comments_cnt = comments_cnt
+        self.comments_cnt = int(comments_cnt)
 
 
 class HNTopPostsSpider:

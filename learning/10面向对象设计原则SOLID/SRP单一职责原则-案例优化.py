@@ -1,9 +1,5 @@
-# 案例：一个简单的Hacker News爬虫
 # SRP认为：一个类应该仅有一个被修改的理由。换句话说，每个类都应该只承担一种职责。
 # 要令脚本符合SRP，最传统的就是把大类拆分为小类。
-
-
-import io
 import sys
 from typing import Iterable, TextIO, Optional, List
 
@@ -37,7 +33,7 @@ class PostsWriter:
 
     def write(self, posts: List[Post]):
         '''以纯文本格式将 hacker News Top 内容写入文件'''
-        self.fp.write(f'# {self.file_title}\n\n')
+        self.fp.write(f'# {self.title}\n\n')
         # ❶enumerate()接收第二个参数，表示从这个数开始计数（默认为0）
         for i, post in enumerate(posts, 1):
             self.fp.write(f'> Top {i}: {post.title}\n')
@@ -55,8 +51,7 @@ class HNTopPostsSpider:
     items_url = 'https://news.ycombinator.com/'
     file_title = 'Top news on HN'
 
-    def __init__(self, fp: TextIO, limit: int = 5):
-        self.fp = fp
+    def __init__(self, limit: int = 5):
         self.limit = limit
 
     def fetch(self) -> Iterable[Post]:
