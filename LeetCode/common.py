@@ -1,46 +1,13 @@
+def test_func(n):
 
 
-def test_func(input_data):
-    haystack = input_data['haystack']
-    needle = input_data['needle']
-
-    # if haystack == needle:
-    #     return 0
-
-    len_haystack = len(haystack)
-    len_needle = len(needle)
-
-    if len_haystack < len_needle:
-        return -1
-
-    for i in range(len_haystack - len_needle + 1):
-        # print('test info:', i, haystack[i: i + len_needle])
-        if haystack[i: i + len_needle] == needle:
-            return i
-    return -1
-
-
-# 测试数据
+    # 测试数据
 CASES = [{
-    'input_data': {
-        'haystack': "sadbutsad",
-        'needle': "sad"},
-    'output_data': 0
-}, {
-    'input_data': {
-        'haystack': "leetcode",
-        'needle': "leeto"},
-    'output_data': -1
-}, {
-    'input_data': {
-        'haystack': "a",
-        'needle': "a"},
-    'output_data': 0
-}, {
-    'input_data': {
-        'haystack': "abc",
-        'needle': "c"},
+    'input_data': 2,
     'output_data': 2
+}, {
+    'input_data': 3,
+    'output_data': 3
 }]
 
 
