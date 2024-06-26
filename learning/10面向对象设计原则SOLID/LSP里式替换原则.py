@@ -34,9 +34,8 @@ class Admin(User):
         for post in session.query(Post).all():
             yield post.id
 
+
 # 问题1：子类随意抛出异常
-
-
 class VIPUser(User):
     def deactive(self):
 
@@ -66,3 +65,7 @@ def deactive_users(users: Iterable[User]):
             user.deactive()
         except DeactivationNotSupported:
             logger.info(f'user {user.username} does not allow deactiving, skip.')
+
+
+def get_user_posts_count(user: User) -> int:
+	return len(user.list_related_posts())            
