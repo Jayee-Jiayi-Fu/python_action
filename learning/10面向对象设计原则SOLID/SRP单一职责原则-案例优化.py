@@ -1,16 +1,11 @@
-# 案例：一个简单的Hacker News爬虫
+# SRP认为：一个类应该仅有一个被修改的理由。换句话说，每个类都应该只承担一种职责。
 # 要令脚本符合SRP，最传统的就是把大类拆分为小类。
-
-import io
 import sys
-from typing import Iterable, TextIO
+from typing import Iterable, TextIO, Optional, List
 
 import requests
 from lxml import etree
 
-
-# 从设计的角度看，下面代码违反了SOLID原则中的第一条：SRP，
-# SRP认为：一个类应该仅有一个被修改的理由。换句话说，每个类都应该只承担一种职责。
 
 class Post:
     ''' Hacker News 上的条目
@@ -29,13 +24,23 @@ class Post:
 
 
 # 把“写入文件”相关的内容进行拆分
-class PostWriter:
+class PostsWriter:
     '''负责将帖子列表写入文件中'''
+
     def __init__(self, fp, title):
         self.fp = fp
         self.title = title
 
-    def 
+    def write(self, posts: List[Post]):
+        '''以纯文本格式将 hacker News Top 内容写入文件'''
+        self.fp.write(f'# {self.title}\n\n')
+        # ❶enumerate()接收第二个参数，表示从这个数开始计数（默认为0）
+        for i, post in enumerate(posts, 1):
+            self.fp.write(f'> Top {i}: {post.title}\n')
+            self.fp.write(f'> 分数：{post.points} 评论数：{post.comments_cnt}\n')
+            self.fp.write(f'> 地址：{post.link}\n')
+            self.fp.write('------\n')
+
 
 class HNTopPostsSpider:
     '''抓取 Hacker New Top 内容条目
@@ -46,19 +51,8 @@ class HNTopPostsSpider:
     items_url = 'https://news.ycombinator.com/'
     file_title = 'Top news on HN'
 
-    def __init__(self, fp: TextIO, limit: int = 5):
-        self.fp = fp
+    def __init__(self, limit: int = 5):
         self.limit = limit
-
-    def write_to_file(self):
-        '''以纯文本格式将 hacker News Top 内容写入文件'''
-        self.fp.write(f'# {self.file_title}\n\n')
-        # ❶enumerate()接收第二个参数，表示从这个数开始计数（默认为0）
-        for i, post in enumerate(self.fetch(), 1):
-            self.fp.write(f'> Top {i}: {post.title}\n')
-            self.fp.write(f'> 分数：{post.points} 评论数：{post.comments_cnt}\n')
-            self.fp.write(f'> 地址：{post.link}\n')
-            self.fp.write('------\n')
 
     def fetch(self) -> Iterable[Post]:
         ''' 从 Hacker News 抓取 Top 内容
@@ -88,15 +82,38 @@ class HNTopPostsSpider:
             )
 
 
+'''
+这样修改以后，HNTopPostsSpider和PostsWriter类都符合了SRP。这两个类各自的修改可以单独进行而不会相互影响。
+只有当解析逻辑变化时，我才会修改HNTopPostsSpider类。
+同样，修改PostsWriter类的理由也只有调整输出格式一种。
+
+
+最后，由于现在两个类各自只负责一件事，需要一个新角色把它们的工作串联起来，因此我实现了一个新的函数get_hn_top_posts()：
+函数同样可以做到“单一职责”
+单一职责是面向对象领域的设计原则，通常用来形容类。
+而在Python中，单一职责的适用范围不限于类——通过定义函数，我们同样能让上面的代码符合单一职责原则。
+'''
+
+# 某个职责拆分为新函数是一个具有Python特色的解决方案。它虽然没有那么“面向对象”，却非常实用，甚至在许多场景下比编写类更简单、更高效。
+
+
+def get_hn_top_posts(fp: Optional[TextIO] = None):
+    """获取 Hacker News Top 内容，并将其写入文件中
+
+    :param fp: 需要写入的文件，如未提供，将向标准输出打印
+    """
+    dest_fp = fp or sys.stdout
+    crawler = HNTopPostsSpider()
+    writer = PostsWriter(dest_fp, title='Top news on HN')
+    writer.write(list(crawler.fetch()))
+
+
 def main():
     # with open('/tmp/hn_top5.txt') as fp:
-    #     crawler = HNTopPostsSpider(fp)
-    #     crawler.write_to_file()
+    #     get_hn_top_posts（fp)
 
-    # 因为 HNTopPostSpider接收任何 file-like 对象，所以可以把 sys.stdout 传进去
     # 实现向控制台标准输出打印功能
-    crawler = HNTopPostsSpider(sys.stdout)
-    crawler.write_to_file()
+    get_hn_top_posts()
 
 
 if __name__ == '__main__':
