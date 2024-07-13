@@ -21,6 +21,8 @@ class User(Model):
 
 
 class Admin(User):
+    '''管理员用户类'''
+
     def deactive(self):
         # raise RuntimeError('Admin can not be deactive')
 
@@ -68,4 +70,67 @@ def deactive_users(users: Iterable[User]):
 
 
 def get_user_posts_count(user: User) -> int:
-	return len(user.list_related_posts())            
+    return len(user.list_related_posts())
+
+
+# 场景3：
+class Rectangle:
+    def __init__(self, width: int, height: int):
+        self._width = width
+        self._height = height
+
+    @property
+    def width(self):
+        return self._width
+
+    @width.setter
+    def width(self, value: int):
+        self._width = value
+
+    @property
+    def height(self):
+        return self._height
+
+    @height.setter
+    def height(self, value: int):
+        self._height = value
+
+    def get_area(self) -> int:
+        """返回当前长方形的面积"""
+        return self.width * self.height
+
+
+class Square(Rectangle):
+    """正方形
+
+    :param length: 边长
+    """
+
+    def __init__(self, length: int): ➊
+    self._width = length
+    self._height = length
+
+    @property
+    def width(self):
+        return super().width
+
+    @width.setter
+    def width(self, value: int): ➋
+    self._width = value
+    self._height = value
+
+    @property
+    def height(self):
+        return super().height
+
+    @height.setter
+    def height(self, value: int):
+        self._width = value
+        self._height = value
+
+
+def test_rectangle_get_area(r: Rectangle):
+    r.width = 3
+    r.height = 5
+    # 传入一个正方形对象Square，会发现它根本无法通过这个测试
+    assert r.get_area() == 15
