@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b61b4fdb-0d63-4942-aed8-1a8d79f5b247" name="Changes" comment="11.3 ISP案例代码">
-      <change afterPath="$PROJECT_DIR$/learning/12 数据模型与描述符/使用属性方法实现属性校验.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning/12 数据模型与描述符/使用描述符实现属性校验.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning/12 数据模型与描述符/运算符魔法方法.py" afterDir="false" />
+    <list default="true" id="b61b4fdb-0d63-4942-aed8-1a8d79f5b247" name="Changes" comment="12.1 描述符">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ignore" beforeDir="false" afterPath="$PROJECT_DIR$/.ignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning/12 数据模型与描述符/魔法方法.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning/12 数据模型与描述符/字符串相关魔法方法.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning/12 数据模型与描述符/使用描述符实现属性校验.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning/12 数据模型与描述符/使用描述符实现属性校验.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +20,11 @@
   </component>
   <component name="Git.Settings">
     <branch-grouping />
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Jayee &lt;jayee.jiayi.fu@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="Capt12" />
@@ -71,7 +72,7 @@
       <recent name="$PROJECT_DIR$/文件处理/读写JSON文件" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.使用属性方法实现属性校验">
+  <component name="RunManager" selected="Python.使用描述符实现属性校验">
     <configuration name="使用属性方法实现属性校验" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -114,7 +115,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="迭代" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="使用描述符实现属性校验" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -122,34 +123,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learning/6循环与可迭代对象" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learning/12 数据模型与描述符" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learning/6循环与可迭代对象/迭代.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="修改对象的布尔值" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learning/条件分支控制流" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learning/条件分支控制流/修改对象的布尔值.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learning/12 数据模型与描述符/使用描述符实现属性校验.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -420,6 +398,50 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="迭代" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learning/6循环与可迭代对象" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learning/6循环与可迭代对象/迭代.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="修改对象的布尔值" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learning/条件分支控制流" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learning/条件分支控制流/修改对象的布尔值.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="first_album" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -466,6 +488,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.使用描述符实现属性校验" />
         <item itemvalue="Python.使用属性方法实现属性校验" />
         <item itemvalue="Python.1" />
         <item itemvalue="Python.first_album" />
@@ -671,7 +694,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696934838374</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="12.1 描述符">
+      <created>1721746019175</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1721746019175</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -712,6 +742,7 @@
     <MESSAGE value="第5章-异常与错误处理-案例1，精确捕获异常" />
     <MESSAGE value="第7章-函数1" />
     <MESSAGE value="7.2 函数：案例故事" />
-    <option name="LAST_COMMIT_MESSAGE" value="7.2 函数：案例故事" />
+    <MESSAGE value="12.1 描述符" />
+    <option name="LAST_COMMIT_MESSAGE" value="12.1 描述符" />
   </component>
 </project>
