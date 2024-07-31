@@ -38,17 +38,22 @@ class IntegerField:
         self.min_value = min_value
         self.max_value = max_value
 
+    def __set_name__(self, owner, name):
+        # 将绑定属性名保存在描述符对象中
+        # 对与 age = IntegerField(...)来说，此处name就是“age”
+        self._name = name
+
     def __get__(self, instance, owner=None):
         # 当不是通过实例访问时，直接返回描述符对象
         if not instance:
             return self
         # 返回保存在实例字典里的值
-        return instance.__dict__["__interger_field"]
+        return instance.__dict__[self._name]
 
     def __set__(self, instance, value):
         # 校验后将值保存在字典里
         value = self._validate_value(value)
-        instance.__dict__["__interger_field"] = value
+        instance.__dict__[self._name] = value
 
     def _validate_value(self, value):
         """校验值是否为符合要求的整数"""
@@ -69,3 +74,8 @@ class Person:
     def __init__(self, name, age):
         self.name = name
         self.age = age
+
+
+p1 = Person("Jayee", 1)
+p2 = Person("Tom", 2)
+print(p1.age, p2.age, p1.age == p2.age)
