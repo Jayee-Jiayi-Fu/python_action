@@ -4,14 +4,14 @@ users_visited_phuket = [
         "first_name": "Sirena",
         "last_name": "Gross",
         "phone_number": "650-568-0388",
-        "date_visited": "2018-03-14"
+        "date_visited": "2018-03-14",
     },
     {
         "first_name": "Shally",
         "last_name": "Pinkman",
         "phone_number": "120-434-8768",
-        "date_visited": "2016-12-11"
-    }
+        "date_visited": "2016-12-11",
+    },
 ]
 
 # 去过新西兰的人员数据
@@ -20,15 +20,20 @@ users_visited_nz = [
         "first_name": "Justin",
         "last_name": "Malcom",
         "phone_number": "267-282-1964",
-        "date_visited": "2011-03-13"
+        "date_visited": "2011-03-13",
     },
     {
         "first_name": "Sirena",
         "last_name": "Gross",
         "phone_number": "650-568-0388",
-        "date_visited": "2018-03-14"
-    }
+        "date_visited": "2018-03-14",
+    },
 ]
+
+
+# =============================================================
+# 方案一
+# =============================================================
 
 
 def find_potential_customers_v1():
@@ -40,9 +45,11 @@ def find_potential_customers_v1():
     for puket_record in users_visited_phuket:
         is_potential = True
         for nz_record in users_visited_nz:
-            if (puket_record["first_name"] == nz_record["first_name"]
+            if (
+                puket_record["first_name"] == nz_record["first_name"]
                 and puket_record["last_name"] == nz_record["last_name"]
-                    and puket_record["phone_number"] == nz_record["phone_number"]):
+                and puket_record["phone_number"] == nz_record["phone_number"]
+            ):
                 is_potential = False
                 break
 
@@ -51,8 +58,13 @@ def find_potential_customers_v1():
 
 
 for user in find_potential_customers_v1():
-    print('find_potential_customers_v1 >>')
+    print("find_potential_customers_v1 >>")
     print(user)
+
+
+# =============================================================
+# 方案二：用集合优化
+# =============================================================
 
 
 def find_potential_customers_v2():
@@ -62,19 +74,24 @@ def find_potential_customers_v2():
     """
     # 首先，遍历所有新西兰旅客记录，创建查找索引
     nz_record_idx = {
-        (rec['first_name'], rec['last_name'], rec['phone_number'])
+        (rec["first_name"], rec["last_name"], rec["phone_number"])
         for rec in users_visited_nz
     }
 
     for rec in users_visited_phuket:
-        key = (rec['first_name'], rec['last_name'], rec['phone_number'])
+        key = (rec["first_name"], rec["last_name"], rec["phone_number"])
         if key not in nz_record_idx:
             yield rec
 
 
 for user in find_potential_customers_v2():
-    print('find_potential_customers_v2 >>')
+    print("find_potential_customers_v2 >>")
     print(user)
+
+
+# =============================================================
+# 方案三：换个思路-求集合的差值
+# =============================================================
 
 
 # 利用集合的游戏规则
@@ -92,7 +109,7 @@ class VisitRecod:
         self.phone_number = phone_number
         self.date_visited = date_visited
 
-    def __eq__(self, other):
+    def __eq__(self, instance, other):
         if isinstance(other, self.__class__):
             return self.comparable_fields == other.comparable_fields
         return False
@@ -101,3 +118,7 @@ class VisitRecod:
     def comparable_fields(self):
         """获取用于对比对象的字段值"""
         return (self.first_name, self.last_name, self.phone_number)
+
+
+v1 = VisitRecod("a", "b", "1342345", "lskjfkljskfjsf")
+set().add(v1)
